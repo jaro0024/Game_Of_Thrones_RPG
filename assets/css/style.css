@@ -4,7 +4,11 @@ html {
 }
 
 body {
-    background-image: url(../images/gotmap.jpg);
+    background-image: url(../images/dragon3.jpg);
+}
+
+h1{
+    font-size: 48px;
 }
 
 h2 {
