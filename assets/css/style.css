@@ -4,20 +4,20 @@ html {
 }
 
 body {
-    background-image: url(../images/dragon3.jpg);
+    background-image: url(../images/gotmap.jpg);
 }
 
 h1{
     font-size: 48px;
+    color: #ffffff;
 }
 
-h2 {
-    color: #0c0c0c;
+h3 {
+    color: #ffffff;
     font-weight: bold;
 }
 
 .game-title {
-    background-color:;
     color: #0c0c0c;
     font-family: 'Cinzel', serif;
     margin-bottom: 10px;
