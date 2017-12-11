@@ -25,36 +25,13 @@
 
     <!-- Main Content -->
     <div class="container">
-        <!-- <div class="row rules">
-            <div class="col-md-12" align="center">
-                <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseRules" aria-expanded="false"
-                    aria-controls="collapseRules">
-                    Rules of game
-                </button>
-                </p>
-                <div class="collapse" id="collapseRules">
-                    <div class="card card-body" align="left">
-                        <ol class="listRules">
-                            <li>You will be given a random number at the start of the game.</li>
-                            <li>There are four crystals below. By clicking on a crystal you will add a specific amount of points
-                                to your total score.</li>
-                            <li>You win the game by matching your total score to the ramdom number, you lose the game if your
-                                total score goes above the random number.</li>
-                            <li>The value of each crystal is hidden from you until you click on it.</li>
-                            <li>Each time when the game starts, the game will change the values of each crystal.</li>
-                            <li>Good Luck!</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <div class="row main" align="center">
+        <div class="row" id="characters" align="center">
             <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-3">
                         <div class="card">
                             <h5 class="card-title">Cersei Lannister</h5>
-                            <img class="card-img-bottom" src="assets/images/cersei.jpg" alt="cersei lannister" />
+                            <img class="card-img-bottom" src="assets/images/cersei.jpg" alt="cersei lannister" id="cersei" />
                             <p class="card-text">100</p>
                         </div>
                     </div>
@@ -62,47 +39,103 @@
                     <div class="col-md-3">
                         <div class="card">
                             <h5 class="card-title">Daenerys Targaryen</h5>
-                            <img class="card-img-bottom" src="assets/images/daenerys.jpg" alt="daenerys targaryen" />
+                            <img class="card-img-bottom" src="assets/images/daenerys.jpg" alt="daenerys targaryen" id="daenerys" />
                             <p class="card-text">150</p>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="card">
-                            <h5 class="card-title">John Snow</h5>
-                            <img class="card-img-bottom" src="assets/images/johnsnow.jpg" alt="john snow" />
+                            <h5 class="card-title">Jon Snow</h5>
+                            <img class="card-img-bottom" src="assets/images/jonsnow.jpg" alt="jon snow" id="jonsnow" />
                             <p class="card-text">180</p>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="card">
                             <h5 class="card-title">Night King</h5>
-                            <img class="card-img-bottom" src="assets/images/whitewalker.jpg" alt="night king" />
+                            <img class="card-img-bottom" src="assets/images/whitewalker.jpg" alt="night king" id="nightking" />
                             <p class="card-text">120</p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <br>
+        <div class="row" id="player">
+            <div class="col-md-12">
+                <div class="row">
+                    <h2>Your Character</h2>
+                    <div class="col-md-3">
 
-                <!-- Footer -->
-                <footer class="footer">
-                    <div class="container">
-                        <span>
-                            <small>
-                                <strong>&copy; Copyright 2017 Daniela Jaros</strong>
-                            </small>
-                        </span>
                     </div>
-                </footer>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row" id="enemies">
+            <div class="col-md-12">
+                <div class="row">
+                    <h2>Enemies Available to Attack</h2>
+                    <div class="col-md-3">
 
-                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-                <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-                    crossorigin="anonymous"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-                    crossorigin="anonymous"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-                    crossorigin="anonymous"></script>
+                    </div>
+                    <div class="col-md-3">
 
-                <!-- My JavaSccript file -->
-                <script type="text/javascript" src="assets/javascript/game.js"></script>
+                    </div>
+                    <div class="col-md-3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row" id="fight">
+            <div class="col-md-12">
+                <div class="row">
+                    <h2>Fight Section</h2>
+                    <div class="col-md-3">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-dark">Attack</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row" id="defender">
+            <div class="col-md-12">
+                <div class="row">
+                    <h2>Defender</h2>
+                    <div class="col-md-3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <span>
+                <small>
+                    <strong>&copy; Copyright 2017 Daniela Jaros</strong>
+                </small>
+            </span>
+        </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+
+    <!-- My JavaSccript file -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 
